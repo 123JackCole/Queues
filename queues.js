@@ -56,3 +56,15 @@ Queue.prototype.dequeue = function() {
     return data;
   
 }
+
+// create queue
+const testQueue = new Queue();
+
+// adds some numbers to our queue
+testQueue.prototype.enqueue(9);
+testQueue.prototype.enqueue(2);
+testQueue.prototype.enqueue(5);
+testQueue.prototype.enqueue(3);
+
+// removes the first element in our queue
+testQueue.prototype.dequeue();
