@@ -30,3 +30,16 @@ function Queue() {
     this.head = null;
     this.tail = null;
 }
+
+Queue.prototype.enqueue = function() {
+    const node = new Node();
+  
+    if(this.head === null) {
+      this.head = node;
+      this.tail = node;
+    } else {
+      this.tail.next = node;
+      this.tail = node;
+    }
+  
+}
