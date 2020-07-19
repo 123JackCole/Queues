@@ -43,3 +43,16 @@ Queue.prototype.enqueue = function() {
     }
   
 }
+
+Queue.prototype.dequeue = function() {
+
+    let data;
+  
+    if(this.head !== null) {
+      data = this.head.data;
+      this.head = this.head.next;
+    }
+  
+    return data;
+  
+}
