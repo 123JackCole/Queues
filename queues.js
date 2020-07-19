@@ -20,3 +20,13 @@ testQueue.prototype.enqueue(2);
 // remove the first element from the queue
 // in this case 9
 testQueue.prototype.dequeue();
+
+function Node(data) {
+    this.data = data;
+    this.next = null;
+}
+  
+function Queue() {
+    this.head = null;
+    this.tail = null;
+}
